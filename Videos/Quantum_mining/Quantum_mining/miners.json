@@ -359,7 +359,7 @@
     "28facbe8": {
         "Quantumgrafic ID": "28facbe8",
         "Public Key (Hex)": "334f6a3d3d0ecee5e31b6678bb9a966bb4c8db8b7bc76ce78cb26c55b1842ea4bc831ccacd2bf7306bbcbb3251ccf872a4cc4e8ee28220f96bd85aa6d5ef3656",
-        "balance": 16.5,
+        "balance": 31.5,
         "transactions": [
             {
                 "timestamp": "2024-12-09T20:10:04.946462",
@@ -554,40 +554,34 @@
                 "status": "API Unavailable, Default Reward Applied"
             },
             {
-                "timestamp": "2024-12-10T11:09:22.676596",
+                "timestamp": "2024-12-10T11:10:49.407504",
                 "type": "reward",
-                "amount": 0.5,
-                "status": "API Unavailable, Default Reward Applied"
+                "amount": 3
             },
             {
-                "timestamp": "2024-12-10T11:19:22.844516",
+                "timestamp": "2024-12-10T11:20:49.635381",
                 "type": "reward",
-                "amount": 0.5,
-                "status": "API Unavailable, Default Reward Applied"
+                "amount": 3
             },
             {
-                "timestamp": "2024-12-10T11:29:22.990774",
+                "timestamp": "2024-12-10T11:30:49.812954",
                 "type": "reward",
-                "amount": 0.5,
-                "status": "API Unavailable, Default Reward Applied"
+                "amount": 3
             },
             {
-                "timestamp": "2024-12-10T11:39:23.167984",
+                "timestamp": "2024-12-10T11:40:49.964685",
                 "type": "reward",
-                "amount": 0.5,
-                "status": "API Unavailable, Default Reward Applied"
+                "amount": 3
             },
             {
-                "timestamp": "2024-12-10T11:49:23.341211",
+                "timestamp": "2024-12-10T11:50:50.121465",
                 "type": "reward",
-                "amount": 0.5,
-                "status": "API Unavailable, Default Reward Applied"
+                "amount": 3
             },
             {
-                "timestamp": "2024-12-10T11:59:23.522382",
+                "timestamp": "2024-12-10T12:00:50.285547",
                 "type": "reward",
-                "amount": 0.5,
-                "status": "API Unavailable, Default Reward Applied"
+                "amount": 3
             }
         ]
     },
@@ -624,110 +618,176 @@
     "3d7730d7": {
         "Quantumgrafic ID": "3d7730d7",
         "Public Key (Hex)": "d1c40a5635c2fc315381c0d2638b1b9ed258d0738dbdfd421a3b6a2e0a1f980fdeeae1d25247a7078fec54543963210c26fc87ba7e25a934fa5157d759bc25d7",
-        "balance": 63000.0,
+        "balance": 0.0,
+        "transactions": []
+    },
+    "0fdb5e4e": {
+        "Quantumgrafic ID": "0fdb5e4e",
+        "Public Key (Hex)": "143891148b78cb5e4fb72dd39d27cafff665e6573c83f44c79c55165eeafdd991bd6754d9ae9bf02ca138c6add97151d1ec6e06c2d898f4ad7b7a483d3937cda",
+        "balance": 99000.0,
         "transactions": [
             {
-                "timestamp": "2024-12-10T12:10:38.052551",
+                "timestamp": "2024-12-10T12:13:25.738242",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T12:20:38.217961",
+                "timestamp": "2024-12-10T12:23:25.929277",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T12:30:38.380449",
+                "timestamp": "2024-12-10T12:33:26.071374",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T12:40:38.594823",
+                "timestamp": "2024-12-10T12:43:26.241454",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T12:50:38.771120",
+                "timestamp": "2024-12-10T12:53:26.415329",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T13:00:38.966891",
+                "timestamp": "2024-12-10T13:03:26.620768",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T13:10:39.175957",
+                "timestamp": "2024-12-10T13:13:26.793586",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T13:20:39.363669",
+                "timestamp": "2024-12-10T13:23:27.062103",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T13:30:39.564828",
+                "timestamp": "2024-12-10T13:33:27.222596",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T13:40:39.754591",
+                "timestamp": "2024-12-10T13:43:27.378195",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T13:50:39.990371",
+                "timestamp": "2024-12-10T13:53:27.582491",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T14:00:40.184854",
+                "timestamp": "2024-12-10T14:03:27.748308",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T14:10:40.381827",
+                "timestamp": "2024-12-10T14:13:27.954632",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T14:20:40.554382",
+                "timestamp": "2024-12-10T14:23:28.157005",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T14:30:40.814999",
+                "timestamp": "2024-12-10T14:33:28.326341",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T14:40:41.015032",
+                "timestamp": "2024-12-10T14:43:28.572987",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T14:50:41.203638",
+                "timestamp": "2024-12-10T14:53:28.790873",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T15:00:41.409595",
+                "timestamp": "2024-12-10T15:03:28.978325",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T15:10:41.573421",
+                "timestamp": "2024-12-10T15:13:29.141918",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T15:20:41.765525",
+                "timestamp": "2024-12-10T15:23:29.300304",
                 "type": "reward",
                 "amount": 3000
             },
             {
-                "timestamp": "2024-12-10T15:30:41.920761",
+                "timestamp": "2024-12-10T15:33:29.464058",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T15:43:29.636620",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T15:53:29.865314",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T16:03:30.010558",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T16:13:30.196636",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T16:23:30.354754",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T16:33:30.553209",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T16:43:30.762650",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T16:53:30.961822",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T17:03:31.155710",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T17:13:31.333653",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T17:23:31.492004",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T17:33:31.666977",
                 "type": "reward",
                 "amount": 3000
             }
