@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 import hashlib
 import random
 import json
@@ -98,131 +98,14 @@ def calculate_reward(temperature):
     else:
         return 3
 
-# Start mining for a specific Quantumgrafic ID
-def start_mining():
-    synchronize_ids()
-    miner_id = input("Enter your Quantumgrafic ID to start mining: ")
-    if miner_id not in miners:
-        print("Quantumgrafic ID not found. Please register first.")
-        return
+# Flask Routes
+@app.route("/")
+def home():
+    return "Quantum Mining System is Live!"
 
-    print(f"Mining started for Quantumgrafic ID: {miner_id}. Rewards will be paid every 10 minutes.")
-    try:
-        while True:
-            time.sleep(600)  # Wait 10 minutes
-            weather_data = fetch_weather_data()
-            if weather_data:
-                temperature = weather_data["current"]["temp"]
-                reward = calculate_reward(temperature)
-            else:
-                reward = 3000  # Default reward if API fails
-
-            miners[miner_id]["balance"] += reward
-            miners[miner_id]["transactions"].append({
-                "timestamp": datetime.now().isoformat(),
-                "type": "reward",
-                "amount": reward
-            })
-            save_json(MINERS_FILE, miners)
-            print(f"Reward: {reward} Quantum Units added to Quantumgrafic ID: {miner_id}. Total Balance: {miners[miner_id]['balance']} Quantum Units.")
-    except KeyboardInterrupt:
-        print("\nMining stopped.")
-
-# Register a new miner
-def register_miner():
-    private_key_hex = generate_private_key()
-    public_key_hex = generate_public_key(private_key_hex)
-    quantumgrafic_id = generate_checksum(public_key_hex)
-    private_key_hash = hash_data(private_key_hex)
-
-    synchronize_ids()
-
-    if quantumgrafic_id in miners:
-        print("Quantumgrafic ID already exists. Registration failed.")
-        return
-
-    miner_data = {
-        "Quantumgrafic ID": quantumgrafic_id,
-        "Public Key (Hex)": public_key_hex,
-        "balance": 0.0,
-        "transactions": []
-    }
-
-    miners[quantumgrafic_id] = miner_data
-    register_to_core(quantumgrafic_id, public_key_hex, private_key_hash)
-    save_json(MINERS_FILE, miners)
-
-    print(f"Registration successful!")
-    print(f"Quantumgrafic ID: {quantumgrafic_id}")
-    print(f"Private Key: {private_key_hex} (Keep it safe!)")
-    print(f"Public Key: {public_key_hex}")
-
-# Login miner
-def login_miner():
-    synchronize_ids()
-    miner_id = input("Enter your Quantumgrafic ID: ")
-    if miner_id in miners:
-        print(f"Welcome back, {miner_id}!")
-    else:
-        print("Quantumgrafic ID not found. Please register first.")
-
-# Check balance
-def check_balance():
-    synchronize_ids()
-    miner_id = input("Enter your Quantumgrafic ID: ")
-    if miner_id in miners:
-        print(f"Balance: {miners[miner_id]['balance']} Quantum Units")
-    else:
-        print("Quantumgrafic ID not found.")
-
-# Make a transaction
-def make_transaction():
-    synchronize_ids()
-    sender_id = input("Enter your Quantumgrafic ID: ")
-    private_key = input("Enter your private key: ")
-
-    if sender_id not in miners:
-        print("Sender Quantumgrafic ID not found.")
-        return
-
-    receiver_id = input("Enter receiver's Quantumgrafic ID: ")
-    if receiver_id not in miners:
-        print("Receiver Quantumgrafic ID not found.")
-        return
-
-    try:
-        amount = float(input("Enter amount to send: "))
-    except ValueError:
-        print("Invalid amount entered.")
-        return
-
-    if miners[sender_id]["balance"] < amount:
-        print("Insufficient balance!")
-        return
-
-    miners[sender_id]["balance"] -= amount
-    miners[receiver_id]["balance"] += amount
-
-    transaction = {
-        "timestamp": datetime.now().isoformat(),
-        "from": sender_id,
-        "to": receiver_id,
-        "amount": amount
-    }
-
-    miners[sender_id]["transactions"].append(transaction)
-    miners[receiver_id]["transactions"].append(transaction)
-    quantum_core.setdefault("transactions", []).append(transaction)
-
-    save_json(MINERS_FILE, miners)
-    save_json(QUANTUM_CORE_FILE, quantum_core)
-
-    print(f"Transaction successful. Sent {amount} Quantum Units to {receiver_id}.")
-
-# Main menu
 @app.route("/menu", methods=["GET"])
 def main_menu():
-    return {
+    return jsonify({
         "menu": [
             "1. Log in",
             "2. New Registration",
@@ -231,7 +114,34 @@ def main_menu():
             "5. Check Balance",
             "6. Exit"
         ]
+    })
+
+@app.route("/register", methods=["POST"])
+def register_route():
+    private_key_hex = generate_private_key()
+    public_key_hex = generate_public_key(private_key_hex)
+    quantumgrafic_id = generate_checksum(public_key_hex)
+    private_key_hash = hash_data(private_key_hex)
+
+    if quantumgrafic_id in miners:
+        return jsonify({"message": "Quantumgrafic ID already exists."}), 400
+
+    miner_data = {
+        "Quantumgrafic ID": quantumgrafic_id,
+        "Public Key (Hex)": public_key_hex,
+        "balance": 0.0,
+        "transactions": []
     }
+    miners[quantumgrafic_id] = miner_data
+    register_to_core(quantumgrafic_id, public_key_hex, private_key_hash)
+    save_json(MINERS_FILE, miners)
+
+    return jsonify({
+        "message": "Registration successful!",
+        "Quantumgrafic ID": quantumgrafic_id,
+        "Private Key": private_key_hex,
+        "Public Key": public_key_hex
+    })
 
 if __name__ == "__main__":
     from waitress import serve
