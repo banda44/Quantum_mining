@@ -1,3 +1,4 @@
+from flask import Flask
 import hashlib
 import random
 import json
@@ -5,6 +6,9 @@ import time
 from datetime import datetime
 from ecdsa import SECP256k1, SigningKey
 import requests
+
+# Create Flask app instance
+app = Flask(__name__)
 
 # Files to store data
 MINERS_FILE = "miners.json"
@@ -181,10 +185,6 @@ def make_transaction():
         print("Sender Quantumgrafic ID not found.")
         return
 
-    if sender_id not in miners:
-        print("Sender Quantumgrafic ID not found.")
-        return
-
     receiver_id = input("Enter receiver's Quantumgrafic ID: ")
     if receiver_id not in miners:
         print("Receiver Quantumgrafic ID not found.")
@@ -220,31 +220,19 @@ def make_transaction():
     print(f"Transaction successful. Sent {amount} Quantum Units to {receiver_id}.")
 
 # Main menu
-def main():
-    while True:
-        print("\n1. Log in")
-        print("2. New Registration")
-        print("3. Start Mining")
-        print("4. Make a Transaction")
-        print("5. Check Balance")
-        print("6. Exit")
-
-        choice = input("Choose an option: ")
-
-        if choice == "1":
-            login_miner()
-        elif choice == "2":
-            register_miner()
-        elif choice == "3":
-            start_mining()
-        elif choice == "4":
-            make_transaction()
-        elif choice == "5":
-            check_balance()
-        elif choice == "6":
-            exit(0)
-        else:
-            print("Invalid choice!")
+@app.route("/menu", methods=["GET"])
+def main_menu():
+    return {
+        "menu": [
+            "1. Log in",
+            "2. New Registration",
+            "3. Start Mining",
+            "4. Make a Transaction",
+            "5. Check Balance",
+            "6. Exit"
+        ]
+    }
 
 if __name__ == "__main__":
-    main()
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8000)

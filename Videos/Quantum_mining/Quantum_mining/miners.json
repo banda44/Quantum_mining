@@ -624,7 +624,7 @@
     "3d7730d7": {
         "Quantumgrafic ID": "3d7730d7",
         "Public Key (Hex)": "d1c40a5635c2fc315381c0d2638b1b9ed258d0738dbdfd421a3b6a2e0a1f980fdeeae1d25247a7078fec54543963210c26fc87ba7e25a934fa5157d759bc25d7",
-        "balance": 42000.0,
+        "balance": 63000.0,
         "transactions": [
             {
                 "timestamp": "2024-12-10T12:10:38.052551",
@@ -693,6 +693,41 @@
             },
             {
                 "timestamp": "2024-12-10T14:20:40.554382",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T14:30:40.814999",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T14:40:41.015032",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T14:50:41.203638",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T15:00:41.409595",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T15:10:41.573421",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T15:20:41.765525",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T15:30:41.920761",
                 "type": "reward",
                 "amount": 3000
             }
