@@ -1,0 +1,706 @@
+{
+    "f4284bc4": {
+        "Quantumgrafic ID": "f4284bc4",
+        "Private Key (Hex)": "9461c48c8d57e3cbdd934d16a76c5a8b27413330d005bd15fbfc030c60593391",
+        "Public Key (Hex)": "300b7fac2aa128a693f919eeda38a520a0e2d227365aa8cdc4cb0407c165a312a350e4daba77cf8de60ef9b00ca538dca515aebdb4814c0465cab3864fd7dae0",
+        "Balance": 8.639999999999999e-06,
+        "is_active": true,
+        "balance": 0.1500039999999994,
+        "start_time": 1733518981.0780036,
+        "transactions": [
+            {
+                "timestamp": "2024-12-08T23:12:05.770081",
+                "from": "f4284bc4",
+                "to": "d9842347",
+                "amount": 1.0
+            },
+            {
+                "timestamp": "2024-12-08T23:15:25.672218",
+                "from": "f4284bc4",
+                "to": "435d69d6",
+                "amount": 1.0
+            },
+            {
+                "timestamp": "2024-12-09T10:49:24.717053",
+                "from": "f4284bc4",
+                "to": "260f5f58",
+                "amount": 0.1
+            }
+        ]
+    },
+    "d9842347": {
+        "Quantumgrafic ID": "d9842347",
+        "Private Key (Hex)": "ca24c44880182de8db7982e6835180624b503ddff7818f0bf8b563fcec4c93e9",
+        "Public Key (Hex)": "69c9cd4f4bbc7f159e59246274ba4562a0f49bec992e40dc649f8eab9ae0a12f38afbf173fc4dea1640d85a898bc6d778b688cc8c4a4d99f6b487e580855d869",
+        "Balance": 0,
+        "is_active": false,
+        "balance": 1.3000024,
+        "start_time": 1733520975.4792492,
+        "transactions": [
+            {
+                "timestamp": "2024-12-08T23:12:05.770081",
+                "from": "f4284bc4",
+                "to": "d9842347",
+                "amount": 1.0
+            }
+        ]
+    },
+    "435d69d6": {
+        "Quantumgrafic ID": "435d69d6",
+        "Private Key (Hex)": "71375a0615dd14ee8b272d515d34fbb28e556091351d91f557b9d2428ad6e107",
+        "Public Key (Hex)": "185dbf94b3c40365bae921461d2c2fa2298c3d7adda449546c487d8ce37f721f9b6b18ab187ee98e5a2d2dd82e35f8711373cf358721d05add2659452c6eb752",
+        "Balance": 0,
+        "is_active": false,
+        "balance": 1.0,
+        "start_time": 1733518981.0780048,
+        "transactions": [
+            {
+                "timestamp": "2024-12-08T23:15:25.672218",
+                "from": "f4284bc4",
+                "to": "435d69d6",
+                "amount": 1.0
+            }
+        ]
+    },
+    "6a147437": {
+        "Quantumgrafic ID": "6a147437",
+        "Encrypted Private Key": "gAAAAABnUK_8M7N6GyIiNtjWogrT2lhEntd7fzhQf6tkeiIMqt5TJ1I7Z5_FotncgBEwU2HBI7YiPhlqUTtBSWKSrcWjCId9Rd3hAXiP5phLzNFma1zV8qdzXvb-EJmJ-KXWNZIHSq72uQ33UauQR8eci8zBDmRhD9HxZ4TFg6rYeBeuCZSkRTo=",
+        "Public Key (Hex)": "71abdafcb63a326fee725c216581f544e5b6169c6e8d35725cf398da394248a94aad5cb28449f83137c75681bb1e31caa3f736c878276a170d7631107df2a08c",
+        "Balance": 8.479999999999998e-06,
+        "is_active": true,
+        "balance": 0.0,
+        "start_time": 1733518981.078005,
+        "transactions": []
+    },
+    "14a28024": {
+        "Quantumgrafic ID": "14a28024",
+        "Encrypted Private Key": "gAAAAABnULXp5m6Iv83eoJUJMjc8qh19DWntyXiDLPTtrOuEIGT8JoVftTlbjciGSBRqcYMXrfZhvI2JuWiEboAeLqzUfgUi0XHBj9cWw80fFtFWIIJdKWscSWiZqhC98BqZiQzBr0rxEkS6ZZhtW_bUTh5hC0fBFWPzBnw0QI0EXN49Vv8vJqY=",
+        "Public Key (Hex)": "d772e02ac1e831160dcf66dad12bfef2fa29ec6100a95c5c0adbc7df95e675a2d253241fd39b65043635211eea76e4cda03159cc2fc2d38b24006efb8ca42b41",
+        "Balance": 1.04e-05,
+        "is_active": true,
+        "balance": 0.0,
+        "start_time": 1733518981.078005,
+        "transactions": []
+    },
+    "e354546b": {
+        "Quantumgrafic ID": "e354546b",
+        "Encrypted Private Key": "gAAAAABnUYCfz0hXHiot6BkIgFRFCTkdPJWgcv5kTVLTUBl45dItyD9vDGAVbAn9qYIRvh7ErGxzFsOHwT0XhwbOvXez5ephIPqmrO5z8n8vLGzX691j8s9AmVb0wZyHZeGzfxnCW4QFuxvvwxQ1PB-HPCptUP8rWqS7IjxGnJV-vVPfG5u1xdU=",
+        "Public Key (Hex)": "fd4b2018755c8d67755934bf1da1416a55676341bdc5b1473e24febd9f9030635feee334a6f4d5b39eb15e5cdeab0abfe444e5964a6e2c9eaf6694509407dc0a",
+        "Balance": 2.000009519999999,
+        "is_active": true,
+        "Transactions": [
+            {
+                "type": "sent",
+                "details": {
+                    "timestamp": "2024-12-06 00:04:50",
+                    "from": "e354546b",
+                    "to": "14a28024",
+                    "amount": 7.0
+                }
+            }
+        ],
+        "balance": 0.0,
+        "start_time": 1733518981.0780053,
+        "transactions": []
+    },
+    "ce3ed1a9": {
+        "Quantumgrafic ID": "ce3ed1a9",
+        "Encrypted Private Key": "gAAAAABnUY_NGUChBbHQ5bYfTIxYKncgtAA7wwu2T_Qo_xnyYJ0d9KnvGalP3FZP6TZGvefG5R06PhxLc7K6BOPEpoKcaKUvx0dTpaV5LlPO7Brr7-ghr49y3pOgmvwjQ6J3V2LwecWJeESxlYanbdxOInFHejBKSc7VwRc8M7L6DWtogly_LrY=",
+        "Public Key (Hex)": "37788789c199bda0335e98a2fe2ebdb2024cfd7d65e0e4b95c15ce2e4faca57d02e63c99c3d92cdb1b4bee66d9cdb24ebcbcab38590841d4824e863b7c8ff8ed",
+        "Balance": 5.6320000000000016e-05,
+        "is_active": true,
+        "balance": 0.0,
+        "start_time": 1733518981.0780056,
+        "transactions": []
+    },
+    "fghjn": {
+        "Balance": 5.36e-06,
+        "is_active": true,
+        "balance": 0.0,
+        "start_time": 1733518981.0780056,
+        "transactions": []
+    },
+    "new": {
+        "Balance": 0.0,
+        "is_active": true,
+        "balance": 0.0,
+        "start_time": 1733518981.0780058,
+        "transactions": []
+    },
+    "1": {
+        "Balance": 0.0,
+        "is_active": true,
+        "balance": 0.0,
+        "start_time": 1733518981.078006,
+        "transactions": []
+    },
+    "34567": {
+        "Balance": 0.0,
+        "is_active": true,
+        "balance": 0.0,
+        "start_time": 1733518981.078006,
+        "transactions": []
+    },
+    "234": {
+        "Balance": 0.0,
+        "is_active": true,
+        "balance": 0.0,
+        "start_time": 1733518981.0780063,
+        "transactions": []
+    },
+    "5678": {
+        "Balance": 0.0,
+        "is_active": true,
+        "balance": 0.0,
+        "start_time": 1733518981.0780063,
+        "transactions": []
+    },
+    "2b5a0674": {
+        "Quantumgrafic ID": "2b5a0674",
+        "Private Key (Hex)": "f123fbd2b7474e711496059013ddb3615204567c90cc8526d2632a2aff10bb28",
+        "Public Key (Hex)": "b9632cc30a09d2aba8b47ec5671378c258f25ca466242b85e030a666ec6df6f41ed8d81709a1cfe637389ff3c29309b2487c624118387d3ed17b71e2da539f66",
+        "balance": 3.0,
+        "last_mined": "2024-12-06 18:11:30.479832",
+        "start_time": 1733518981.0780065,
+        "transactions": [
+            {
+                "timestamp": "2024-12-07T08:53:32.900570",
+                "from": "2b5a0674",
+                "to": "0aad04d9",
+                "amount": 1.0
+            }
+        ]
+    },
+    "6c03a9cd": {
+        "Quantumgrafic ID": "6c03a9cd",
+        "Private Key (Hex)": "7aa02fe9cf576101b614ef5677d55bdcc550e983b75268b732d234e2af5790bf",
+        "Public Key (Hex)": "c302aa2b299f0360da1c4af5f3e57fea86bf72327dbee5a8d6d7c6f9183549ab1585cd7ef0e8ec9ad3199290f1a84731069fc34c91802803aab6cab0c1fd22d4",
+        "balance": 0.0,
+        "start_time": 1733521238.5888276,
+        "transactions": []
+    },
+    "0f7856cd": {
+        "Quantumgrafic ID": "0f7856cd",
+        "Private Key (Hex)": "f6a80e2aa66e81e1420a363a0b4e914f871aff4061bffc30368854c1da232ff8",
+        "Public Key (Hex)": "0215496e3fec0045707eb8de022668776cb7bf94675e508a1331ece36add3108a032bcc47bc7872db3a38983412a128121de61a7536dbf4a25fe187fd9f12a66",
+        "balance": 7.2e-06,
+        "start_time": 1733521283.5934916,
+        "transactions": []
+    },
+    "bf2a0fd0": {
+        "Quantumgrafic ID": "bf2a0fd0",
+        "Private Key (Hex)": "3f6800bba5c7be39c9c619a2663a04e30a3298317b7c5d9a72ae089dc4fd88ff",
+        "Public Key (Hex)": "0b703839a179ed9a1ef7efff34c4606e77b202bb74e6c9cb559c32295fc8950596265d2194bf8055376caadc940760438ccb6a36f624298831ca447083206999",
+        "balance": 0.0,
+        "start_time": 1733521747.6671329,
+        "transactions": []
+    },
+    "64831896": {
+        "Quantumgrafic ID": "64831896",
+        "Private Key (Hex)": "30cad46beb171b286b65c694c786afca0f91276717d215dfc19d12bcffe5ee4b",
+        "Public Key (Hex)": "816115053f3eacdcca8738a086cd2def7a898ae39df6dba19e1de94f68b2225fd3966bb6431f7eda4db10cd16b43e7e3eb59c9ac76d4e3f4ec9f4eaa246fdb30",
+        "balance": 0.0,
+        "start_time": 1733522281.5756602,
+        "transactions": []
+    },
+    "fa1b8890": {
+        "Quantumgrafic ID": "fa1b8890",
+        "Private Key (Hex)": "7b41523a45da32d9390ac22e4cb14c237e6d00c5677bc0c4b717fc0a5b2169ab",
+        "Public Key (Hex)": "916bc294f7a88ca1d20ce5697aa5e734de4c6ca8d8e4a431678785b6c4baaeb30b9d6d56b89f512f69048dadeeadc7d5d9ec9fa7352a244bc9f52257569210b3",
+        "balance": 0.0,
+        "start_time": 1733522809.9268541,
+        "transactions": []
+    },
+    "def0312c": {
+        "Quantumgrafic ID": "def0312c",
+        "Private Key (Hex)": "551e6e4c18387e8a9bdc21e8b5c0d156caeb4bc26a0ff4472211f87e9d2cb8b8",
+        "Public Key (Hex)": "b9e345a72289e37c0df43e0293a0ff52eb1d4a485c88eb788a120a92124be39a9b140c67a0afbc2c1e948067d2c65c5a28c5a6476652676df7d0ec845b0a6e92",
+        "balance": 0.0,
+        "start_time": 1733522926.1184926,
+        "transactions": []
+    },
+    "a2137e62": {
+        "Quantumgrafic ID": "a2137e62",
+        "Private Key (Hex)": "78ca942010199b06e471d43d57c603a675615e91de2d8da4915ce4de91ec6a9d",
+        "Public Key (Hex)": "00b0940480e3f1a7f4800a1853af97b5fac5bb63e8d7cd0e65eac07c664143c63135e9e4db615752d0fbd0852a00613bf60451471431c362631337efb85513cf",
+        "balance": 0.0,
+        "start_time": 1733523372.3626597,
+        "transactions": []
+    },
+    "d986bd2d": {
+        "Quantumgrafic ID": "d986bd2d",
+        "Private Key (Hex)": "23cd2fbcfdb4507b7a272239bbcf471d46bd48fc245a064fe59c6e45546384c4",
+        "Public Key (Hex)": "dec194b993e902de935ec6454f4c781e56c0b17b91535e7b6f997bc27aeb33512dfbd66c972e5e706caac70290dbb2d9578b03c3b8123116ffc345f9bdbbf83b",
+        "balance": 0.0,
+        "start_time": 1733523713.5378768,
+        "transactions": []
+    },
+    "c85f98b5": {
+        "Quantumgrafic ID": "c85f98b5",
+        "Private Key (Hex)": "5d53cc396b1b9a9413672fc96a2fee87e660513e6f22a78e6a47b1e0956d4e03",
+        "Public Key (Hex)": "8ad7b1c2a071e36eb8d3c38c2e2b212e275189c815adfd3fa077bbd029d207e71b3c98d63f33b4d3eee2bcd75c5b0b3dd049585523def0892390fd57d094cf40",
+        "balance": 0.0,
+        "start_time": 1733525835.8509018,
+        "transactions": []
+    },
+    "24": {
+        "Private Key (Hex)": "1",
+        "Public Key (Hex)": "1",
+        "balance": 0,
+        "transactions": []
+    },
+    "DDD92098": {
+        "Private Key (Hex)": "45e52130B8c1e6DE8e5BF0BB8Df04d9f8AdA6cc08e09e85E68f5B763Ff42522a",
+        "Public Key (Hex)": "DDD92098F3fb1cD8dBEEde481BE6cfeD4Bd96ebf0dEc812e17Ca7CAABd8bf54fBC0a670b8aa9D4f7629c4dDC5f0e2070C5cE8c5EEAc9aDA5ce9A97f9cdB20aDD",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "fe38f303": {
+        "Quantumgrafic ID": "fe38f303",
+        "Private Key (Hex)": "ea3e2c60a46ca5e7ca1f9eb0d95d1d73823d8069cbe4ea460ee3b9b8bff7b5ff",
+        "Public Key (Hex)": "3a74186feca12e87f0de79d5fef50ab167a0f570b4bba19288207bf21f8d6d11b85f15d777dbeafa3f586bebaeefdf8e6d1494fd71cd7b74e40759f00b0abb98",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "bfb22588": {
+        "Quantumgrafic ID": "bfb22588",
+        "Private Key (Hex)": "caea79c054ce10ecc5ae29721cf48738a5f673c94d6cb6299e9ef395254f4ce6",
+        "Public Key (Hex)": "838b9e0cab5195527efdbb92341f0f7441017b7cf7cda0eab9973bb56840c815744bed754e182f726371ab2e7001dc0b9a740a02e0f96381d5f6021d2c926122",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "0aad04d9": {
+        "Quantumgrafic ID": "0aad04d9",
+        "Private Key (Hex)": "dbc61ec71336a26d50321015286d2fffe7b99210f2bb6d7ebf0549613167ae07",
+        "Public Key (Hex)": "ffc698376b582b6e5575acbb376f04cfa1d725754e651926d7e44266ec84483056bca7db816d97066987d5cebae5f270e0ce001eff3d5ed5772bdf743c61a745",
+        "balance": 0.9000000000000008,
+        "transactions": [
+            {
+                "timestamp": "2024-12-07T08:53:32.900570",
+                "from": "2b5a0674",
+                "to": "0aad04d9",
+                "amount": 1.0
+            },
+            {
+                "timestamp": "2024-12-08T04:34:15.839246",
+                "from": "0aad04d9",
+                "to": "d0ede32d",
+                "amount": 1.0
+            }
+        ]
+    },
+    "ed22f1ba": {
+        "Quantumgrafic ID": "ed22f1ba",
+        "Private Key (Hex)": "8a6cdcd31ee1c99093d8500c704839a5df5613f5a736849d7f1b7401e3c74c12",
+        "Public Key (Hex)": "2ec07da29a348102eec169372289f45c4a82c80f1f2af45f4569c73eb9e82a1a91cd2a688177734b84c5c637c1d82061e2e2458bcc27439820b4b4539ab017dd",
+        "balance": 0.3,
+        "transactions": []
+    },
+    "f91e20a8": {
+        "Quantumgrafic ID": "f91e20a8",
+        "Private Key (Hex)": "b5ad62c44688ee4b665a4c4f9b07a21363dd4bd59c2c2ee627adab944b63cc00",
+        "Public Key (Hex)": "18d57eef7472a56277f4b7e618991e90332410ceb2a52508b808eee9055a71c6f5183e0c88d77fd06203750cdcdbcf0d52f9cebd6f69fedc449fba36fea48b71",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "185b25a7": {
+        "Quantumgrafic ID": "185b25a7",
+        "Private Key (Hex)": "b493ca2723cc95fb632bdbbcb0bd4d283b64e5a5072710e587e3dca90817c836",
+        "Public Key (Hex)": "221ce1496e1f49326dea23cdc6e373de4dc4fdda0643976b4ea00a9d60b9bf4bc41c1ab0e1beea46c56dbcc64ebeab79b67ece8503f45efafcf714b7d3aef837",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "d0ede32d": {
+        "Quantumgrafic ID": "d0ede32d",
+        "Private Key (Hex)": "6c7e50f7a7249e448c7dd708b849f4510c2473e84992e53ffd6dbaf4c67e5f57",
+        "Public Key (Hex)": "558791e44db64e50716a03979c6b62b0885becf1e6aacf0ea62ec1b2e05f2b739e79f084d537b35f22f47f031b7b01402dc784f23f5a3c1706c3ce16a9888c79",
+        "balance": 1.0,
+        "transactions": [
+            {
+                "timestamp": "2024-12-08T04:34:15.839246",
+                "from": "0aad04d9",
+                "to": "d0ede32d",
+                "amount": 1.0
+            }
+        ]
+    },
+    "260f5f58": {
+        "Quantumgrafic ID": "260f5f58",
+        "Private Key (Hex)": "243755649c9ef8407e140c881aa8e4e3c2fe1fd3a39b4779f63e04b0fd37b069",
+        "Public Key (Hex)": "11e467e8b8ea774dc9dd3dc791500ca5c57054dfee014bcb3b263787f287925d55fd5b27ca1bb17b7728db60d983af750d06c6634aee00e9cb33fd30efbb7162",
+        "balance": 0.1,
+        "transactions": [
+            {
+                "timestamp": "2024-12-09T10:49:24.717053",
+                "from": "f4284bc4",
+                "to": "260f5f58",
+                "amount": 0.1
+            }
+        ]
+    },
+    "20145b0e": {
+        "Quantumgrafic ID": "20145b0e",
+        "Public Key (Hex)": "a45302dddf70d18d2a1e2ec39010969f44635803ede3fa0dcd864553a4ac21c661f1608f41f2c11b153f29e1412735be3eeb96815eb9b6a5a1ab496bf7694242",
+        "balance": 0.39999999999999997,
+        "transactions": []
+    },
+    "254da6c4": {
+        "Quantumgrafic ID": "254da6c4",
+        "Public Key (Hex)": "5cb28557864ccbc4350ea5a3892f4db48654904b1814a7c0990021e04bb15989757a051448da0f55e0c5699322e46c1ef7e5b6fb42c5ba53c4a0bce6766ff938",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "98ffebc3": {
+        "Quantumgrafic ID": "98ffebc3",
+        "Public Key (Hex)": "8efc5d31f4864c61ac8efa4ec2d1138ab837d9d824d37a0b137bf99e7dd7f7d64c9d2274a363c3112cd7124b3000b8febfe0e0174e2ebaff5f5764d263bf2b68",
+        "balance": 0.2,
+        "transactions": []
+    },
+    "28facbe8": {
+        "Quantumgrafic ID": "28facbe8",
+        "Public Key (Hex)": "334f6a3d3d0ecee5e31b6678bb9a966bb4c8db8b7bc76ce78cb26c55b1842ea4bc831ccacd2bf7306bbcbb3251ccf872a4cc4e8ee28220f96bd85aa6d5ef3656",
+        "balance": 31.5,
+        "transactions": [
+            {
+                "timestamp": "2024-12-09T20:10:04.946462",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T20:20:05.133132",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T20:30:05.322701",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T20:40:05.520511",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T20:50:05.684458",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T21:00:05.936342",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T21:10:06.088333",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T21:20:06.263775",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T21:30:06.470029",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T21:40:06.739065",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T21:50:06.907148",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T22:00:07.090334",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T22:10:07.253560",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T22:20:07.417995",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T22:30:07.582845",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T22:40:07.741026",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T22:45:19.447269",
+                "from": "28facbe8",
+                "to": "83d80b48",
+                "amount": 2.0
+            },
+            {
+                "timestamp": "2024-12-09T22:57:34.788017",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-09T23:07:35.164842",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T01:06:22.002182",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T09:09:20.434916",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T09:19:20.624879",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T09:29:20.802153",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T09:39:20.991228",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T09:49:21.169115",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T09:59:21.400344",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T10:09:21.573042",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T10:19:21.744567",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T10:29:21.926808",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T10:39:22.133043",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T10:49:22.306790",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T10:59:22.466208",
+                "type": "reward",
+                "amount": 0.5,
+                "status": "API Unavailable, Default Reward Applied"
+            },
+            {
+                "timestamp": "2024-12-10T11:10:49.407504",
+                "type": "reward",
+                "amount": 3
+            },
+            {
+                "timestamp": "2024-12-10T11:20:49.635381",
+                "type": "reward",
+                "amount": 3
+            },
+            {
+                "timestamp": "2024-12-10T11:30:49.812954",
+                "type": "reward",
+                "amount": 3
+            },
+            {
+                "timestamp": "2024-12-10T11:40:49.964685",
+                "type": "reward",
+                "amount": 3
+            },
+            {
+                "timestamp": "2024-12-10T11:50:50.121465",
+                "type": "reward",
+                "amount": 3
+            },
+            {
+                "timestamp": "2024-12-10T12:00:50.285547",
+                "type": "reward",
+                "amount": 3
+            }
+        ]
+    },
+    "78f41d08": {
+        "Quantumgrafic ID": "78f41d08",
+        "Public Key (Hex)": "3be229faaeaccdcbc5bec68a37894883f10777cff8b7edf904e20447733e75ef4c0668457c3ca769355635aee8ecc2d4b0e9b67e583ae7470c25e535f5932236",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "93f03143": {
+        "Quantumgrafic ID": "93f03143",
+        "Public Key (Hex)": "2754b63a26f9122343c7833a6fcb2474ea342ab8f0d8ce3a68c714f4b26d0c621189578fed9291e9a388c64686b5b2b420b0b8f6dd3b9ca7005d427268c7eaac",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "d5c1be96": {
+        "Quantumgrafic ID": "d5c1be96",
+        "Public Key (Hex)": "fb83ad36bdf5f77ea6e98dec3dadaad0ede68f01db4ae991e65286a97a7651a7b814bb4540e7182ec0275c75b710cd51831109e7b8dd241e822f4992e08f18d6",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "bc613f82": {
+        "Quantumgrafic ID": "bc613f82",
+        "Public Key (Hex)": "fa39032447516714b694b4d11f7154976c264cd3c79b5d30886ba2da0b043565928438eb1d7ba5648ff0eb5aeaa572ebd860c10f8a9dad3139150d29c6b586ed",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "83d80b48": {
+        "Quantumgrafic ID": "83d80b48",
+        "Public Key (Hex)": "f34e0ac42db8ec7be7f866e8dced0d6a65efdfa5a91aa28af097985f5a3842ea13c0b47d8938428f11299bb9b4df3fa55cc61da59e42d2131184acf76b497a19",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "3d7730d7": {
+        "Quantumgrafic ID": "3d7730d7",
+        "Public Key (Hex)": "d1c40a5635c2fc315381c0d2638b1b9ed258d0738dbdfd421a3b6a2e0a1f980fdeeae1d25247a7078fec54543963210c26fc87ba7e25a934fa5157d759bc25d7",
+        "balance": 0.0,
+        "transactions": []
+    },
+    "0fdb5e4e": {
+        "Quantumgrafic ID": "0fdb5e4e",
+        "Public Key (Hex)": "143891148b78cb5e4fb72dd39d27cafff665e6573c83f44c79c55165eeafdd991bd6754d9ae9bf02ca138c6add97151d1ec6e06c2d898f4ad7b7a483d3937cda",
+        "balance": 45000.0,
+        "transactions": [
+            {
+                "timestamp": "2024-12-10T12:13:25.738242",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T12:23:25.929277",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T12:33:26.071374",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T12:43:26.241454",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T12:53:26.415329",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T13:03:26.620768",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T13:13:26.793586",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T13:23:27.062103",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T13:33:27.222596",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T13:43:27.378195",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T13:53:27.582491",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T14:03:27.748308",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T14:13:27.954632",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T14:23:28.157005",
+                "type": "reward",
+                "amount": 3000
+            },
+            {
+                "timestamp": "2024-12-10T14:33:28.326341",
+                "type": "reward",
+                "amount": 3000
+            }
+        ]
+    }
+}
