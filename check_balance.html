@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Balance</title>
+</head>
+<body>
+    <h1>Check Balance</h1>
+    <form id="balanceForm">
+        <input type="text" id="quantumgrafic_id" placeholder="Quantumgrafic ID" required>
+        <button type="submit">Check Balance</button>
+    </form>
+    <div id="response"></div>
+    <script>
+        document.getElementById("balanceForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const quantumgrafic_id = document.getElementById("quantumgrafic_id").value;
+            const response = await fetch("/check_balance", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ "Quantumgrafic ID": quantumgrafic_id })
+            });
+            const data = await response.json();
+            document.getElementById("response").textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
