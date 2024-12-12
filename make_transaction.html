@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Transaction</title>
+</head>
+<body>
+    <h1>Make Transaction</h1>
+    <form id="transactionForm">
+        <label for="sender_id">Sender's Quantumgrafic ID:</label>
+        <input type="text" id="sender_id" placeholder="Enter your Quantumgrafic ID" required>
+        <label for="private_key">Private Key:</label>
+        <input type="password" id="private_key" placeholder="Confirm your Private Key" required>
+        <label for="receiver_id">Receiver's Quantumgrafic ID:</label>
+        <input type="text" id="receiver_id" placeholder="Enter Receiver's Quantumgrafic ID" required>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter Amount" step="0.01" required>
+        <button type="submit">Confirm Transaction</button>
+    </form>
+    <div id="response"></div>
+    <script>
+        document.getElementById("transactionForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const sender_id = document.getElementById("sender_id").value;
+            const private_key = document.getElementById("private_key").value;
+            const receiver_id = document.getElementById("receiver_id").value;
+            const amount = parseFloat(document.getElementById("amount").value);
+
+            const response = await fetch("/make_transaction", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ sender_id, private_key, receiver_id, amount })
+            });
+
+            const data = await response.json();
+            document.getElementById("response").textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
+
