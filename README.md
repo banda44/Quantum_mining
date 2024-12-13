@@ -2,7 +2,7 @@
 Note important after the download the Quantum mining to your computer or laptop. C:\Users\inter\Downloads\Quantum_mining-main.zip 
 
 
-you create sett up the files in another directory
+you should create sett up the files in another directory
 
 
 
