@@ -1,4 +1,17 @@
-from .core import contents, where
+from __future__ import annotations
 
-__all__ = ["contents", "where"]
-__version__ = "2024.08.30"
+from .base import ANY
+from .base import default_namespace
+from .base import NamedSignal
+from .base import Namespace
+from .base import Signal
+from .base import signal
+
+__all__ = [
+    "ANY",
+    "default_namespace",
+    "NamedSignal",
+    "Namespace",
+    "Signal",
+    "signal",
+]
