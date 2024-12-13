@@ -1,14 +1,46 @@
+
 note important after the download the Quantum mining to your computer or laptop. C:\Users\inter\Downloads\Quantum_mining-main.zip 
+
+
 you create sett up the files in another directory
+
+
+
 1 exemplo :  C:\Users\inter\Music\Quantum_mining
+
+
+
 2 create new folder inside of C:\Users\inter\Music\Quantum_mining\Quantum_mining.
+
+
+
+
 3  after you created inside of folder C:\Users\inter\Music\Quantum_mining\Quantum_mining
 
+
+
+
 go back to the main all download files. and copi : miners, quantum_core,quantum_mining,requiments,style css.
+
+
+
 and paste this files inside of  C:\Users\inter\Music\Quantum_mining\Quantum_mining
+
+
+
+
 now you should create templates folder inside : C:\Users\inter\Music\Quantum_mining\Quantum_mining
+
+
+
 open the templates folder: paste all html files like index,check balance,login,make transation, manu, mining,register
+
+
+
 after you done now you  have to creaate env folder for active your local machnie to use the system
+
+
+
 
 and read the quick guide 
 
