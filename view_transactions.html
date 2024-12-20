@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Transactions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input, select, button {
+            margin-right: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quantum Transactions</h1>
+
+    <form method="POST">
+        <label for="miner_id">Miner ID:</label>
+        <input type="text" id="miner_id" name="miner_id" placeholder="Enter Miner ID">
+
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="all">All</option>
+            <option value="reward">Reward</option>
+            <option value="transaction">Transaction</option>
+        </select>
+
+        <label for="start_date">Start Date:</label>
+        <input type="datetime-local" id="start_date" name="start_date">
+
+        <label for="end_date">End Date:</label>
+        <input type="datetime-local" id="end_date" name="end_date">
+
+        <button type="submit">Search</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Miner ID</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Signature</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for tx in transactions %}
+            <tr>
+                <td>{{ tx.timestamp }}</td>
+                <td>{{ tx.miner_id }}</td>
+                <td>{{ tx.type }}</td>
+                <td>{{ tx.amount }}</td>
+                <td>{{ tx.signature }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+
+
