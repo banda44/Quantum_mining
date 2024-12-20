@@ -1,0 +1,58 @@
+{
+    "trades": [
+        {
+            "timestamp": "2024-12-16T16:18:00.179430",
+            "type": "buy",
+            "quantum_units": 1.0,
+            "btc_amount": 0.00047037
+        },
+        {
+            "timestamp": "2024-12-16T16:18:31.179347",
+            "type": "sell",
+            "quantum_units": 400.0,
+            "btc_amount": 0.18814852
+        },
+        {
+            "timestamp": "2024-12-16T17:09:19.516457",
+            "type": "sell",
+            "quantum_units": 1.0,
+            "btc_amount": 0.00046819
+        },
+        {
+            "timestamp": "2024-12-16T18:21:24.879176",
+            "type": "buy",
+            "quantum_units": 300.0,
+            "btc_amount": 0.14003118
+        },
+        {
+            "timestamp": "2024-12-16T18:21:25.030849",
+            "type": "buy",
+            "quantum_units": 300.0,
+            "btc_amount": 0.14003118
+        },
+        {
+            "timestamp": "2024-12-16T18:48:18.434987",
+            "type": "buy",
+            "quantum_units": 5.0,
+            "btc_amount": 0.00232383
+        },
+        {
+            "timestamp": "2024-12-16T18:49:04.013870",
+            "type": "sell",
+            "quantum_units": 2.0,
+            "btc_amount": 0.00092953
+        },
+        {
+            "timestamp": "2024-12-16T23:54:04.936246",
+            "type": "buy",
+            "quantum_units": 1.0,
+            "btc_amount": 0.00047154
+        },
+        {
+            "timestamp": "2024-12-16T23:54:34.866277",
+            "type": "sell",
+            "quantum_units": 3.0,
+            "btc_amount": 0.00141461
+        }
+    ]
+}
