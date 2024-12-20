@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Quantum Mining</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 30px 20px;
+            width: 100%;
+            max-width: 360px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            color: #4caf50;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #4caf50;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #81c784;
+        }
+
+        .login-button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #81c784;
+        }
+
+        .response-container {
+            margin-top: 20px;
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #e8f5e9;
+            color: #388e3c;
+            display: none;
+        }
+
+        .response-container.error {
+            background-color: #ffebee;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="text" id="quantumgrafic_id" placeholder="Enter Quantumgrafic ID" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div id="response" class="response-container"></div>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const quantumgrafic_id = document.getElementById("quantumgrafic_id").value;
+            const responseDiv = document.getElementById("response");
+
+            try {
+                const response = await fetch("/login", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ "Quantumgrafic ID": quantumgrafic_id })
+                });
+
+                const data = await response.json();
+
+                responseDiv.style.display = "block";
+                responseDiv.textContent = data.message || "Login successful!";
+                responseDiv.className = "response-container";
+
+            } catch (error) {
+                responseDiv.style.display = "block";
+                responseDiv.textContent = "Error logging in. Please try again.";
+                responseDiv.className = "response-container error";
+            }
+        });
+    </script>
+</body>
+</html>
+
+
