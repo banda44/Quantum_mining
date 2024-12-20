@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Balance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4fff4; /* Light green background */
+            color: #333;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff; /* White card */
+            border: 2px solid #4CAF50; /* Green border */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            background-color: #e8fce8;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Check Balance</h1>
+        <p>Enter your Quantumgrafic ID to check your balance:</p>
+        <form id="checkBalanceForm">
+            <input type="text" id="quantumgrafic_id" placeholder="Quantumgrafic ID" required>
+            <button type="submit">Check Balance</button>
+        </form>
+        <div id="response" class="result"></div>
+    </div>
+    <script>
+        document.getElementById("checkBalanceForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const quantumgrafic_id = document.getElementById("quantumgrafic_id").value;
+            const response = await fetch("/check_balance", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ "Quantumgrafic ID": quantumgrafic_id })
+            });
+            const data = await response.json();
+            const responseDiv = document.getElementById("response");
+
+            if (response.ok) {
+                responseDiv.innerHTML = `
+                    ${data.balance} Quantum Units
+                `;
+            } else {
+                responseDiv.innerHTML = `<p class="error">Error: ${data.message}</p>`;
+            }
+        });
+    </script>
+</body>
+</html>
+
+
