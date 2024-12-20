@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .details span {
+            font-weight: bold;
+        }
+        input[type="text"], button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Confirm Your Transaction</h1>
+        <div class="details">
+            <p>Transaction ID: <span>{{ transaction_id }}</span></p>
+            <p>Quantumgrafic ID: <span>{{ quantumgrafic_id }}</span></p>
+            <p>Total BTC to Pay: <span>{{ btc_to_pay }}</span></p>
+            <p>BTC Payment Address: <span>{{ btc_address }}</span></p>
+        </div>
+
+        <form action="/confirm_transaction" method="post">
+            <label for="btc_transaction_hash">Enter BTC Transaction Hash:</label>
+            <input type="text" id="btc_transaction_hash" name="btc_transaction_hash" required>
+
+            <button type="submit">Confirm Payment</button>
+        </form>
+
+        {% if success_message %}
+            <p class="success">{{ success_message }}</p>
+        {% elif error_message %}
+            <p class="error">{{ error_message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
