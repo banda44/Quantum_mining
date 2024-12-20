@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #f9f9f9;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 24px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <button id="registerButton">Register</button>
+        <div id="output" class="output"></div>
+    </div>
+    <script>
+        document.getElementById("registerButton").addEventListener("click", async () => {
+            const response = await fetch("/register", { method: "POST" });
+            const data = await response.json();
+
+            const outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = `
+                <strong>Quantumgrafic ID:</strong> ${data["Quantumgrafic ID"]}<br>
+                <strong>Private Key:</strong> ${data["Private Key"]}<br>
+                <strong>Public Key:</strong> ${data["Public Key"]}
+            `;
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
