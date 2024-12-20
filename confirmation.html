@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Purchase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .details span {
+            font-weight: bold;
+        }
+        input[type="text"], button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer.
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Confirm Purchase</h1>
+        <div class="details">
+            <p>Quantumgrafic ID: <span>{{ quantumgrafic_id }}</span></p>
+            <p>Amount of Quantum Units: <span>{{ amount }}</span></p>
+            <p>BTC Price (per Quantum Unit): <span>{{ btc_price }}</span> USD</p>
+            <p>Total BTC to Pay: <span>{{ btc_to_pay }}</span></p>
+            <p>BTC Payment Address: <span>{{ btc_address }}</span></p>
+        </div>
+
+        <form action="/confirm_transaction" method="post">
+            <input type="hidden" name="transaction_id" value="{{ transaction_id }}">
+            <label for="btc_transaction_hash">Enter BTC Transaction Hash:</label>
+            <input type="text" id="btc_transaction_hash" name="btc_transaction_hash" required>
+            <button type="submit">Confirm Payment</button>
+        </form>
+    </div>
+</body>
+</html>
